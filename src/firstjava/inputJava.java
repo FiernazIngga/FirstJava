@@ -1,15 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package firstjava;
+import java.util.Scanner;
 
-/**
- *
- * @author M S I
- */
 public class inputJava {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        Scanner input = new Scanner(System.in);
+        String nama, alamat;
+        int umur;
+        
+        System.out.print("Nama   : ");
+        nama = input.nextLine();
+        System.out.print("Alamat : ");
+        alamat = input.nextLine();
+        System.out.print("Umur   : ");
+        umur = input.nextInt();
+        System.out.println("======================================");
+        System.out.println(nama + " lahir di " + alamat);
+        System.out.println("Berumur " + umur);
     }
 }
